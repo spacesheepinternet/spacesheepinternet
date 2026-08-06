@@ -13,7 +13,7 @@ AI engineer focused on **LLM evaluation, RAG systems, and fine-tuning**. I find 
 
 ### [PeatLearn](https://github.com/spacesheepinternet/PeatLearn) — grounded biomedical RAG · [live site](https://peatlearn.com)
 
-Citation-backed RAG chatbot over a 552-document biomedical corpus. Embedding model fine-tuned with hard-negative mining, tiered data-cleaning pipeline, LLM-as-judge eval harness scoring **9.64/10** answer quality, ~$0.008/query in production.
+Citation-backed RAG chatbot over a 552-document biomedical corpus. Multi-stage retrieval (HyDE → two-pass Pinecone → reranking, with a cross-encoder fine-tuned on hard-negative-mined pairs), tiered data-cleaning pipeline, LLM-as-judge eval harness scoring **9.64/10** answer quality, ~$0.008/query in production.
 
 ### [metal-llm](https://github.com/spacesheepinternet/metal-llm) — LLM-generated guitar tablature
 
