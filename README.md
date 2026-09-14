@@ -1,12 +1,14 @@
 # Hi, I'm Rehan 👋
 
-AI engineer focused on **LLM evaluation, RAG systems, and fine-tuning**. I find bugs by running tools against real workloads — twice now in eval libraries used in production.
+AI engineer focused on **LLM evaluation, RAG systems, and fine-tuning**. I find bugs by running tools against real workloads, then fix them upstream — three merged into libraries that ship in production.
 
 ## Open-source contributions
 
 | Project | Contribution |
 |---|---|
+| **[Haystack](https://github.com/deepset-ai/haystack)** | ✅ **Merged** — [#12726](https://github.com/deepset-ai/haystack/pull/12726) `fix: strip UTF-8 BOM in text, CSV, Markdown and JSON converters`. A BOM-prefixed file silently carried a zero-width `U+FEFF` into the first `Document`. Reviewed across five rounds by a deepset maintainer. |
 | **[Arize Phoenix](https://github.com/Arize-ai/phoenix)** | ✅ **Merged** — [#14995](https://github.com/Arize-ai/phoenix/pull/14995) `fix(traces): render ReasoningPart in gen_ai message flattening` |
+| **[pydantic-ai](https://github.com/pydantic/pydantic-ai)** | ✅ **Merged** — [#7290](https://github.com/pydantic/pydantic-ai/pull/7290), written from my [issue #7281](https://github.com/pydantic/pydantic-ai/issues/7281) and verified on Windows at the maintainer's request |
 | **[Braintrust autoevals](https://github.com/braintrustdata/autoevals)** | [PR #209](https://github.com/braintrustdata/autoevals/pull/209) — `AnswerRelevancy` silently ignores `embedding_model` · [Issue #211](https://github.com/braintrustdata/autoevals/issues/211) — cross-model embedding-cache poisoning. Both found by running autoevals against my own RAG eval harness. |
 
 ## Projects
