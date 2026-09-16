@@ -19,7 +19,7 @@ Citation-backed RAG chatbot over a 552-document biomedical corpus. Multi-stage r
 
 ### [metal-llm](https://github.com/spacesheepinternet/metal-llm) — LLM-generated guitar tablature
 
-Fine-tuning a small LLM to write heavy-metal guitar tab (DadaGP token format) — QLoRA on 8 GB VRAM. Built a before/after eval suite (validity, decodability, novelty): tab validity **2.1% → 99.5%** over the base model. Pilot adapter on [Hugging Face](https://huggingface.co/spacesheepinternet/metal-llm-pilot). Includes an audio demo where the model continues a real intro into an original solo.
+Fine-tuning a small LLM to write heavy-metal guitar tab (DadaGP token format) — QLoRA on 8 GB VRAM. Built a before/after eval suite under one frozen config (validity, decodability, novelty): tab validity **2.1% → 99.5%** over the base model. The training split is **cluster-based because the official one leaked** — 578 duplicate clusters straddled train and validation, which would have faked the result. Then I audited my own headline number: feeding the model a genre label it had **never been trained on** produced the same output as a trained one, proving the conditioning metric measured nothing — [written up in the README](https://github.com/spacesheepinternet/metal-llm#conditioning-is-weaker-than-this-number-suggests). Pilot adapter on [Hugging Face](https://huggingface.co/spacesheepinternet/metal-llm-pilot). Includes an audio demo where the model continues a real intro into an original solo.
 
 ---
 
